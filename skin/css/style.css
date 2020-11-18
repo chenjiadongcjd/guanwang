@@ -909,6 +909,17 @@ a.btn-center {
 	padding: 4px 20px 2px 20px
 }
 }
+.caption_em .apply_show{
+	display: flex;
+	align-items: center;
+background: #F4F4F4;
+padding: 35px 20px;
+flex-wrap: wrap;
+}
+.caption_em .apply_show img{
+width: 172px;
+height: 304px;
+}
 /*header*/
 .navbar-default {
 	padding: 0;
@@ -1475,6 +1486,9 @@ background: #F4F4F4;
 text-align: left;
 line-height: 34px;
 padding: 90px 12px 0;
+font-size: 16px;
+font-weight: 400;
+color: #333;
 }
 
 .caption_lib .content div .border_img{
@@ -1540,7 +1554,7 @@ height: 255px;
 border: 2px solid #CC9966;
 vertical-align: middle;
 text-align: left;
-
+font-weight: 400;
 font-size: 16px;
 color: #333333;
 line-height: 34px;
@@ -1746,7 +1760,8 @@ margin-left: -2px;
 		height: 100%;
 	}
 	.caption_order .content .content_nr{
-		display: block;
+		display: flex;
+    flex-direction: column;
 	}
 	.caption_order .content .content_nr .desc{
 		width: 269px;
@@ -1772,7 +1787,7 @@ margin-left: -2px;
 	}
 	.caption h4,.caption_lib h4,.caption_order h4,.caption_em h4
 	{
-		font-size: 20px;
+		font-size: 14px;
 	}
 	.caption_lib .content{
 		flex-direction: column;
