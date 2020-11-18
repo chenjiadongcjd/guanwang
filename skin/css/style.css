@@ -1433,7 +1433,8 @@ to {
 	-webkit-transition: All 0.2s ease-in-out
 }
 .case .caption h2,
-.case .caption h4{
+.case .caption h4
+{
 	color: #CC9966;
 }
 .case .caption h4{
@@ -2444,12 +2445,39 @@ p .wenhua-btn {
 	background-color: #fff
 }
 @media (max-width:767px) {
+	
 .more-menu {
 	padding-top: 10px
 }
 .more-menu figure {
 	margin-top: 30px
 }
+}
+
+.page-lianxi{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+background: #F4F4F4;
+}
+.col-lg-offset-1 {
+    margin-left: 0;
+}
+.page-lianxi .contact_way{
+	font-size: 24px;
+	font-weight: 400;
+	color: #333333;
+	text-align: center;
+}
+.page-lianxi .contact_way img{
+	/* margin-bottom: 32px; */
+}
+.page-lianxi .line{
+	width: 1px;
+	
+height: 324px;
+	background: #CDCDCD;
 }
 .more-menu figure:hover {
 	background-color: #c96;
@@ -2475,6 +2503,7 @@ p .wenhua-btn {
 	font-size: 14px;
 	margin: 5px 0 0 0
 }
+
 .page-lianxi .wygt a {
 	width: 50px;
 	height: 50px;
@@ -2488,8 +2517,9 @@ p .wenhua-btn {
 	font-size: 24px
 }
 @media (min-width:768px) {
+	
 .page-lianxi .row div:nth-child(1), .page-lianxi .row div:nth-child(2) {
-	border-right: 1px solid #ddd
+	/* border-right: 1px solid #ddd */
 }
 }
 .page-service hr, .page-design hr {
@@ -2499,6 +2529,7 @@ p .wenhua-btn {
 	margin-top: 0
 }
 @media (min-width:1200px) {
+	
 .page-service .left .col-lg-7 h3, .page-service .left .col-lg-7 p, .page-design .left .col-lg-7 h3, .page-design .left .col-lg-7 p {
 	margin-left: 40px
 }
@@ -2507,6 +2538,15 @@ p .wenhua-btn {
 }
 }
 @media (min-width:768px) and (max-width:1199px) {
+	.page-lianxi{
+		flex-direction: column;
+	}
+	.page-lianxi .line{
+		display: none;
+	}
+	.page-lianxi .map{
+		margin-top: 20px;
+	}
 	.caption_lib .content{
 		flex-direction: column;
 		align-items: center;
@@ -2557,6 +2597,24 @@ p .wenhua-btn {
 	box-shadow: -15px 15px 0 #000
 }
 @media (max-width:767px) {
+	.page-lianxi{
+		flex-direction: column;
+	}
+	.contact-txt h2{
+		font-size: 18px;
+	}
+	.contact-txt h5{
+		font-size: 16px;
+	}
+	.page-lianxi .line{
+		display: none;
+	}
+	.page-lianxi .map{
+		margin-top: 20px;
+	}
+	.page-lianxi .contact_way{
+		font-size: 16px;
+	}
 .page-design .row div h3, .page-service .row div h3 {
 	margin-top: 45px
 }
@@ -2883,4 +2941,11 @@ p .wenhua-btn {
 	border: none;
 	cursor: pointer;
 	background: url(../images/api_lxb_cb_btn_bg.png) 5px 3px no-repeat
+}
+.contact-txt h2,.contact-txt h5{
+	color: #CC9966;
+}
+.contact-txt{
+	text-align: center;
+	margin-bottom: 40px;
 }
